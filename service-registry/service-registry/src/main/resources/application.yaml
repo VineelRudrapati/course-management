@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: service-registry
+
+eureka:
+  client:
+    register-with-eureka: false
+    # This server should NOT register itself
+
+    fetch-registry: false
+    # It should NOT fetch other registries
+
+  instance:
+    hostname: localhost
